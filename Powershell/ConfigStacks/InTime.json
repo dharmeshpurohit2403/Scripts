@@ -1,0 +1,193 @@
+{
+    "WebSites":{
+        "DitkaWeb":{
+            "UserName":"Administrator",
+            "Password":"ITT@12345612312",
+            "MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+            "DeployServer":"10.10.17.24",
+            "day1":{
+                "DeployFromLocation":"C:\\OUTPUT\\DitkaWeb\\Day1Local\\WebSite",
+                "DeployToLocation":"C:\\inetpub\\wwwroot\\DitkaWebDay1",
+                "MSBuildCompileArgument":"/p:ReferencePath=\"C:\\Codebase\\Day1_DitkaWeb\\Ditka4.0\\DitkaRunTime\" /p:Configuration=InTime /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:ReferencePath=\"C:\\Codebase\\Day1_DitkaWeb\\Ditka4.0\\DitkaRunTime\" /p:Configuration=InTime /p:TransformConfigFiles=true /p:publishprofile=\"Day1OnLocal\" /p:OutDir=\"C:\\OUTPUT\\DitkaWeb\\Day1Local\\WebSite\\bin\" /p:deployonbuild=true /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"",
+                "DeleteExtraFolders":"C:\\OUTPUT\\DitkaWeb\\Day1Local\\WebSite\\bin\\_PublishedWebsites",
+                "BackupLocation":"C:\\Deployment Backups\\DitkaWeb\\Day1",
+                "IsBuildRequired":"true"
+            },
+            "Projects":{
+                "DeployFromLocation":"C:\\OUTPUT\\DitkaWeb\\ProjLocal\\WebSite",
+                "DeployToLocation":"C:\\inetpub\\wwwroot\\Automation_DitkaWebProj",
+                "MSBuildCompileArgument":"/p:ReferencePath=\"C:\\Codebase\\Proj_DitkaWeb\\Ditka4.0\\DitkaRunTime\" /p:Configuration=InTime /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:ReferencePath=\"C:\\Codebase\\Proj_DitkaWeb\\Ditka4.0\\DitkaRunTime\" /p:Configuration=InTime /p:TransformConfigFiles=true /p:publishprofile=\"ProjOnLocal\" /p:OutDir=\"C:\\OUTPUT\\DitkaWeb\\ProjIntegration\\WebSite\\bin\" /p:deployonbuild=true /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"",
+                "DeleteExtraFolders":"C:\\OUTPUT\\DitkaWeb\\ProjLocal\\WebSite\\bin\\_PublishedWebsites",
+                "BackupLocation":"C:\\Deployment Backups\\DitkaWeb\\Projects",
+                "IsBuildRequired":"true"
+            }
+        },
+		"BVR":{
+			"UserName":"CIISERVER-CI\\Administrator",
+			"Password":"ITT@12345612312",
+			"MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+			"DeployServer":"10.10.17.24",
+			"Projects":{
+				"DeployFromLocation":"C:\\OUTPUT\\BVR\\ProjLocal\\WebSite",
+				"DeployToLocation":"C:\\inetpub\\wwwroot\\BVR",
+				"MSBuildCompileArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true",
+				"MSBuildArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true /p:publishprofile=\"ProjOnLocal\" /p:Drive=\"C\" /p:deployonbuild=true /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+				"MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+				"DeleteExtraFolders":"",
+				"BackupLocation":"D:\\Deployment Backups\\BVR\\Projects",
+				"IsBuildRequired":"true"
+			}
+		},
+        "PitchPoint":{
+            "UserName":"Administrator",
+            "Password":"ITT@12345612312",
+            "MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+            "DeployServer":"10.10.17.24",
+            "day1":{
+            },
+            "Projects":{
+                "DeployFromLocation":"C:\\OUTPUT\\PitchPoint\\ProjLocal\\WebSite",
+                "DeployToLocation":"C:\\inetpub\\wwwroot\\PitchPoint",
+                "MSBuildCompileArgument":"/p:configuration=InTime /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:configuration=InTime /p:TransformConfigFiles=true  /p:OutDir=\"C:\\OUTPUT\\PitchPoint\\ProjLocal\" /p:publishprofile=\"ProjOnLocal\" /p:DeployOnBuild=true",
+                "MSDeployExtraArguments":"",
+                "DeleteExtraFolders":"C:\\OUTPUT\\PitchPoint\\ProjLocal\\WebSite\\_PublishedWebsites",
+                "BackupLocation":"C:\\Deployment Backups\\PitchPoint\\Projects",
+                "IsBuildRequired":"true"
+            }
+        },
+		 "API":{
+            "UserName":"Administrator",
+            "Password":"tec",
+            "MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+            "DeployServer":"10.10.17.31",
+            "day1":{
+                "DeployFromLocation":"C:\\OUTPUT\\API\\Day1Local\\WebSite",
+                "DeployToLocation":"D:\\CIA\\Ditka\\FannieMae",
+                "MSBuildCompileArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true /p:publishprofile=Day1OnLocal /p:deployonbuild=true /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+                "DeleteExtraFolders":"",
+                "BackupLocation":"C:\\Deployment Backups\\API\\Day1",
+                "IsBuildRequired":"true"
+            },
+            "Projects":{
+            }
+        },
+		"CiberSafe":{
+            "UserName":"Administrator",
+            "Password":"ITT@12345612312",
+            "MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+            "DeployServer":"10.10.17.24",
+            "day1":{
+            },
+            "Projects":{
+                "DeployFromLocation":"C:\\OUTPUT\\CiberSafeSite\\ProjLocal\\WebSite",
+                "DeployToLocation":"D:\\Websites\\CiberSafe\\Content\\CIBERSafe",
+                "MSBuildCompileArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true /p:publishprofile=ProjLocal /p:deployonbuild=true /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+                "DeleteExtraFolders":"C:\\OUTPUT\\CiberSafeSite\\ProjLocal\\_PublishedWebsites",
+                "BackupLocation":"C:\\Deployment Backups\\CiberSafeSite\\Projects",
+                "IsBuildRequired":"true"
+            }
+        }
+    },
+    "Services":{
+        "Radiant":{
+            "UserName":"Administrator",
+            "Password":"te",
+            "MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+            "DeployServer":"10.10.17.31",
+            "day1":{
+                "DeployFromLocation":"C:\\OUTPUT\\Radiant\\Day1Local",
+                "DeployToLocation":"D:\\CIA\\Ditka\\RadiantService",
+                "MSBuildCompileArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true  /p:OutDir=\"C:\\OUTPUT\\Radiant\\Day1Local\" /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+                "DeleteExtraFolders":"",
+                "BackupLocation":"C:\\Deployment Backups\\Radiant\\Day1",
+                "IsBuildRequired":"true"
+            },
+            "Projects":{
+                "DeployFromLocation":"C:\\OUTPUT\\Radiant\\projLocal",
+                "DeployToLocation":"D:\\CIA\\Ditka\\RadiantService",
+                "MSBuildCompileArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true  /p:OutDir=\"C:\\OUTPUT\\Radiant\\ProjLocal\" /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+                "DeleteExtraFolders":"",
+                "BackupLocation":"C:\\Deployment Backups\\Radiant\\Projects",
+                "IsBuildRequired":"true"
+            }
+        },
+		"ReportGen":{
+            "UserName":"Administrator",
+            "Password":"tec",
+            "MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+            "DeployServer":"10.10.17.31",
+            "ServiceName":"Credit Interlink Report Generator Service",
+            "day1":{
+            },
+            "Projects":{
+                "DeployFromLocation":"C:\\OUTPUT\\ReportGen\\ProjLocal",
+                "DeployToLocation":"D:\\CIA\\Ditka\\ReportGenService",
+                "MSBuildCompileArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true /p:OutDir=\"C:\\OUTPUT\\ReportGen\\ProjLocal\" /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+                "DeleteExtraFolders":"",
+                "BackupLocation":"C:\\Deployment Backups\\ReportGen\\Projects",
+                "IsBuildRequired":"true"
+            }
+        },
+        "RemoteRequest":{
+            "UserName":"Administrator",
+            "Password":"ITT@12345612312",
+            "MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+            "DeployServer":"10.10.17.24",
+            "ServiceName":"CI_RemoteRequestService",
+            "day1":{
+            },
+            "Projects":{
+                "DeployFromLocation":"C:\\OUTPUT\\RR\\ProjLocal",
+                "DeployToLocation":"D:\\CIA\\Ditka\\RemoteRequest",
+                "MSBuildCompileArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true /p:OutDir=\"C:\\OUTPUT\\RR\\ProjLocal\" /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+                "DeleteExtraFolders":"C:\\OUTPUT\\RemoteRequest\\ProjLocal\\_PublishWebSite",
+                "BackupLocation":"C:\\Deployment Backups\\RemoteRequest\\Projects",
+                "IsBuildRequired":"true"
+            }
+        },
+        "CiberSafe":{
+            "UserName":"Administrator",
+            "Password":"tec",
+            "MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+            "DeployServer":"10.10.17.31",
+            "ServiceName":"CI_CiberSafeService",
+            "day1":{
+                "DeployFromLocation":"C:\\OUTPUT\\CiberSafeService\\Day1Local",
+                "DeployToLocation":"D:\\CIA\\Ditka\\CiberSafeService",
+                "MSBuildCompileArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true /p:OutDir=\"C:\\OUTPUT\\CiberSafeService\\Day1Local\" /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+                "DeleteExtraFolders":"C:\\OUTPUT\\CiberSafeService\\Day1Local\\_PublishedWebsites",
+                "BackupLocation":"C:\\Deployment Backups\\CiberSafeService\\Day1",
+                "IsBuildRequired":"true"
+            },
+            "Projects":{
+                "DeployFromLocation":"C:\\OUTPUT\\CiberSafeService\\ProjLocal",
+                "DeployToLocation":"D:\\CIA\\Ditka\\CiberSafeService",
+                "MSBuildCompileArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:Configuration=InTime /p:TransformConfigFiles=true /p:OutDir=\"C:\\OUTPUT\\CiberSafeService\\ProjLocal\" /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+                "DeleteExtraFolders":"C:\\OUTPUT\\CiberSafeService\\ProjLocal\\_PublishedWebsites",
+                "BackupLocation":"C:\\Deployment Backups\\CiberSafeService\\Projects",
+                "IsBuildRequired":"true"
+            }
+        }
+    }
+}

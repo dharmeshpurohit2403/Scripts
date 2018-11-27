@@ -1,0 +1,129 @@
+{
+    "WebSites":{
+		"DitkaWeb":{
+			"UserName":"CIACHICAGO\\intimetecftp",
+			"Password":"Int!met3c",
+			"MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+			"DeployServer":"192.168.254.56",
+			"day1":{
+				"DeployFromLocation":"E:\\OUTPUT\\DitkaWeb\\Day1Integration\\WebSite",
+				"DeployToLocation":"D:\\PartnersCredit\\HTML_FormFree",
+				"MSBuildCompileArgument":"/tv:12.0 /p:ReferencePath=\"E:\\Codebase\\Day1_DitkaWeb\\Ditka4.0\\DitkaRunTime\" /p:Configuration=Chicago /p:TransformConfigFiles=true",
+				"MSBuildArgument":"/tv:12.0 /p:ReferencePath=\"E:\\Codebase\\Day1_DitkaWeb\\Ditka4.0\\DitkaRunTime\" /p:Configuration=Chicago /p:TransformConfigFiles=true /p:publishprofile=\"Day1OnIntegration\" /p:Drive=\"E\" /p:OutDir=\"E:\\OUTPUT\\DitkaWeb\\Day1Integration\\WebSite\\bin\" /p:deployonbuild=true /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+				"MSDeployExtraArguments":"-enableRule:DoNotDeleteRule -skip:objectName=filepath,absolutepath=^*stdole.dll*$",
+				"DeleteExtraFolders":"E:\\OUTPUT\\DitkaWeb\\Day1Integration\\WebSite\\bin\\_PublishedWebsites",
+				"BackupLocation":"D:\\Deployment Backups\\DitkaWeb\\Day1",
+				"IsBuildRequired":"true"
+			},
+			"Projects":{
+				"DeployFromLocation":"E:\\OUTPUT\\DitkaWeb\\ProjIntegration\\WebSite",
+				"DeployToLocation":"D:\\ORCS\\HTML",
+				"MSBuildCompileArgument":"/tv:12.0 /p:ReferencePath=\"E:\\Codebase\\Proj_DitkaWeb\\Ditka4.0\\DitkaRunTime\" /p:Configuration=Chicago /p:TransformConfigFiles=true",
+				"MSBuildArgument":"/tv:12.0 /p:ReferencePath=\"E:\\Codebase\\Proj_DitkaWeb\\Ditka4.0\\DitkaRunTime\" /p:Configuration=Chicago /p:TransformConfigFiles=true /p:publishprofile=\"ProjOnIntegration\" /p:Drive=\"E\" /p:OutDir=\"E:\\OUTPUT\\DitkaWeb\\ProjIntegration\\WebSite\\bin\" /p:deployonbuild=true /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+				"MSDeployExtraArguments":"-enableRule:DoNotDeleteRule -skip:objectName=filepath,absolutepath=^*stdole.dll*$",
+				"DeleteExtraFolders":"E:\\OUTPUT\\DitkaWeb\\ProjIntegration\\WebSite\\bin\\_PublishedWebsites",
+				"BackupLocation":"D:\\Deployment Backups\\DitkaWeb\\Projects",
+				"IsBuildRequired":"true"
+			}
+		},
+		"BVR":{
+			"UserName":"CIACHICAGO\\intimetecftp",
+			"Password":"Int!met3c",
+			"MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+			"DeployServer":"192.168.254.56",
+			"Projects":{
+				"DeployFromLocation":"E:\\OUTPUT\\BVR\\ProjIntegration\\WebSite",
+				"DeployToLocation":"D:\\WEBSITES\\BVR",
+				"MSBuildCompileArgument":"/p:Configuration=Chicago /p:TransformConfigFiles=true",
+				"MSBuildArgument":"/p:Configuration=Chicago /p:TransformConfigFiles=true /p:publishprofile=\"ProjOnIntegration\" /p:Drive=\"E\" /p:deployonbuild=true /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+				"MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+				"DeleteExtraFolders":"",
+				"BackupLocation":"D:\\Deployment Backups\\BVR\\Projects",
+				"IsBuildRequired":"true"
+			}
+		},
+		"API":{
+            "UserName":"CIACHICAGO\\intimetecftp",
+            "Password":"Int!met3c",
+            "MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+            "DeployServer":"192.168.254.56",
+            "day1":{
+                "DeployFromLocation":"E:\\OUTPUT\\API\\Day1Integration\\WebSite",
+                "DeployToLocation":"D:\\CreditInterlink\\API",
+                "MSBuildCompileArgument":"/p:Configuration=Chicago /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:Configuration=Chicago /p:TransformConfigFiles=true /p:publishprofile=Day1OnIntegration /p:Drive=\"E\" /p:deployonbuild=true /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+                "DeleteExtraFolders":"",
+                "BackupLocation":"D:\\Deployment Backups\\API\\Day1",
+                "IsBuildRequired":"true"
+            },
+            "Projects":{
+			}
+		},
+		"PitchPoint":{
+            "UserName":"ciachicago\\intimetecftp",
+            "Password":"Int!met3c",
+            "MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+            "DeployServer":"192.168.254.57",
+            "day1":{
+            },
+            "Projects":{
+                "DeployFromLocation":"E:\\OUTPUT\\PitchPoint\\ProjIntegration\\WebSite",
+                "DeployToLocation":"D:\\CIA\\Ditka\\PitchPointService",
+                "MSBuildCompileArgument":"/p:configuration=Chicago /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:configuration=Chicago /p:TransformConfigFiles=true /p:publishprofile=\"ProjOnIntegration\" /p:Drive=\"E\" /p:DeployOnBuild=true /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"",
+                "DeleteExtraFolders":"",
+                "BackupLocation":"D:\\Deployment Backups\\PitchPoint\\Projects",
+                "IsBuildRequired":"true"
+            }
+        },
+        "MidNightRunner":{
+            "UserName":"ciachicago\\intimetecftp",
+            "Password":"Int!met3c",
+            "MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+            "DeployServer":"192.168.254.57",
+            "day1":{
+            },
+            "Projects":{
+                "DeployFromLocation":"C:\\OUTPUT\\MidNightRunner\\ProjIntegration",
+                "DeployToLocation":"D:\\CIA\\Ditka\\MidnightRunner",
+                "MSBuildCompileArgument":"/p:Configuration=Chicago /p:TransformConfigFiles=true",
+                "MSBuildArgument":"/p:configuration=Chicago /p:TransformConfigFiles=true /p:GenerateBuildInfoConfigFile=False /P:OutDir=\"C:\\OUTPUT\\MidNightRunner\\ProjIntegration\" /p:DebugSymbols=false /p:DebugType=None",
+                "MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+                "DeleteExtraFolders":"",
+                "BackupLocation":"C:\\Deployment Backups\\MidNightRunner\\Projects",
+                "IsBuildRequired":"true"
+            }
+        }
+    },
+    "Services":{
+		"Radiant":{
+			"UserName":"ciachicago\\intimetecftp",
+			"Password":"Int!met3",
+			"MailRecepients":"dev.creditinterlink@intimetec.com,rajan.arora@intimetec.com",
+			"DeployServer":"192.168.254.57",
+			"ServiceName":"CreditInterlink RADIANT Service",
+			"day1":{
+				"DeployFromLocation":"E:\\OUTPUT\\Radiant\\Day1Integration",
+				"DeployToLocation":"D:\\CIA\\Ditka\\RadiantService",
+				"MSBuildCompileArgument":"/p:Configuration=Chicago /p:TransformConfigFiles=true",
+				"MSBuildArgument":"/p:Configuration=Chicago /p:TransformConfigFiles=true  /p:OutDir=\"E:\\OUTPUT\\Radiant\\Day1Integration\" /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+				"MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+				"DeleteExtraFolders":"",
+				"BackupLocation":"E:\\Deployment Backups\\Radiant\\Day1",
+				"IsBuildRequired":"true"
+			},
+			"Projects":{
+				"DeployFromLocation":"E:\\OUTPUT\\Radiant\\ProjIntegration",
+				"DeployToLocation":"D:\\CIA\\Ditka\\RadiantService",
+				"MSBuildCompileArgument":"/p:Configuration=Chicago /p:TransformConfigFiles=true",
+				"MSBuildArgument":"/p:Configuration=Chicago /p:TransformConfigFiles=true  /p:OutDir=\"E:\\OUTPUT\\Radiant\\ProjIntegration\" /p:GenerateBuildInfoConfigFile=False /p:DebugSymbols=false /p:DebugType=None",
+				"MSDeployExtraArguments":"-enableRule:DoNotDeleteRule",
+				"DeleteExtraFolders":"",
+				"BackupLocation":"E:\\Deployment Backups\\Radiant\\Projects",
+				"IsBuildRequired":"true"
+			}
+	}
+    }
+}
